@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17700" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="41q-tv-l5A">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="JyP-a9-2pQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avocado" translatesAutoresizingMaskIntoConstraints="NO" id="03m-UX-Rzb">
+                                        <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="Naa-vh-I7S"/>
+                                            <constraint firstAttribute="height" constant="240" id="oZY-Bs-WbA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVOCADO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2X-5E-JTR">
+                                        <rect key="frame" x="108" y="580" width="198" height="52"/>
+                                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="42"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Wm4-Wi-RaE"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Y2X-5E-JTR" firstAttribute="centerX" secondItem="41q-tv-l5A" secondAttribute="centerX" id="5EB-Dr-6SH"/>
+                                    <constraint firstItem="Wm4-Wi-RaE" firstAttribute="bottom" secondItem="JyP-a9-2pQ" secondAttribute="bottom" constant="-34" id="Go4-7h-QtY"/>
+                                    <constraint firstItem="Y2X-5E-JTR" firstAttribute="top" secondItem="03m-UX-Rzb" secondAttribute="bottom" constant="12" id="Hz8-uN-GAB"/>
+                                    <constraint firstItem="Wm4-Wi-RaE" firstAttribute="trailing" secondItem="JyP-a9-2pQ" secondAttribute="trailing" id="PhN-7q-v7b"/>
+                                    <constraint firstItem="JyP-a9-2pQ" firstAttribute="leading" secondItem="Wm4-Wi-RaE" secondAttribute="leading" id="ZUB-VL-4V6"/>
+                                    <constraint firstItem="JyP-a9-2pQ" firstAttribute="top" secondItem="Wm4-Wi-RaE" secondAttribute="top" constant="-44" id="nSf-7Y-0T3"/>
+                                    <constraint firstItem="03m-UX-Rzb" firstAttribute="centerX" secondItem="41q-tv-l5A" secondAttribute="centerX" id="ndL-V1-ebM"/>
+                                    <constraint firstItem="03m-UX-Rzb" firstAttribute="centerY" secondItem="41q-tv-l5A" secondAttribute="centerY" id="rrc-X8-I2F"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avocado" width="883" height="862"/>
+        <image name="background" width="1194" height="834"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
